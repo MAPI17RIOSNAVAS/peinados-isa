@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family: 'cinzel';
+    src:url(/tipografia/Cinzel/static/Cinzel-Bold.ttf);
+}
+@font-face{
+    font-family:'Montserrat';
+    src:url(/tipografia/Montserrat/static/Montserrat-Regular.ttf)
+}
+@font-face{
+    font-family:'Montserrat1';
+    src:url(/tipografia/Montserrat/static/Montserrat-Italic.ttf)
+}
+body{
+    background: linear-gradient(135deg,
+#2A5670,
+#5D92B2,
+#86B7D2);
+    color:white;
+}
+
+.hero-section{
+    background-image: url('img/principal_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.titulo{
+    font-family: 'cinzel';
+    font-size: 40px;
+    color: #000;
+}
+.frase{
+    font-family: 'cinzel';
+    font-size:clamp(2.5rem,6vw,5rem);
+    color: #000;
+    position: absolute;
+    top:25%;
+    right:2%;
+}
+
+@media (width <= 768px){
+    .frase{
+        top:35%;
+        left:8%;
+    color:white;
+    }
+    .hero-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/p.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .accordion-item{
+        margin-bottom:0%;
+    }
+}
